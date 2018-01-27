@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Línea de Comandos</title>
-    <link>http://juangonzalez.com.es/</link>
-    <description>Recent content on Línea de Comandos</description>
+    <title>Posts on Línea de Comandos</title>
+    <link>http://juangonzalez.com.es/posts/</link>
+    <description>Recent content in Posts on Línea de Comandos</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 11 Oct 2017 18:42:08 +0200</lastBuildDate>
     
-	<atom:link href="http://juangonzalez.com.es/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://juangonzalez.com.es/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
