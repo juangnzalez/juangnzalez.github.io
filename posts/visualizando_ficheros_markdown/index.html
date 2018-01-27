@@ -8,7 +8,7 @@
 Opciones Una puede ser interpretar el fichero de texto con formato markdown con el conversor de ficheros Pandoc y pasar la salida a un navegador tipo Lynx o w3m.
 En una línea sería algo como:'>
 
-<meta property='og:title' content='Visualizando ficheros markdown • Línea de Comandos'>
+<meta property='og:title' content='Visualizando ficheros markdown - Línea de Comandos'>
 <meta property='og:description' content='Visualizando ficheros Markdown El lenguaje de marcado Markdown está diseñado para tener buena legibilidad del fichero origen, pero con poco trabajo podemos interpretar el fichero y mostrar en consola el resultado mejorando aún más la legibilidad del documento.
 Opciones Una puede ser interpretar el fichero de texto con formato markdown con el conversor de ficheros Pandoc y pasar la salida a un navegador tipo Lynx o w3m.
 En una línea sería algo como:'>
@@ -18,7 +18,7 @@ En una línea sería algo como:'>
 
 <meta name="generator" content="Hugo 0.34" />
 
-  <title>Visualizando ficheros markdown • Línea de Comandos</title>
+  <title>Visualizando ficheros markdown - Línea de Comandos</title>
   <link rel='canonical' href='http://juangonzalez.com.es/posts/visualizando_ficheros_markdown/'>
   
   
@@ -37,7 +37,7 @@ En una línea sería algo como:'>
         <nav id='main-menu' class='main-menu-container' aria-label=''>
   <ul class='main-menu'>
   <li>
-      <a href='https://github.com/MunifTanjim/minimo'>Repo</a>
+      <a href='http://juangonzalez.com.es'> inicio </a>
     </li>
   
   </ul>
@@ -78,15 +78,6 @@ En una línea sería algo como:'>
 
   
   
-<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-  
-  <circle cx="12" cy="12" r="10"/>
-  <polyline points="12 6 12 12 15 15"/>
-  
-</svg>
-
-</span>
-
 
 </div>
 
@@ -109,9 +100,12 @@ En una línea sería algo como:'>
 <p>Una puede ser <em>interpretar</em> el fichero de texto con formato <em>markdown</em> con el conversor de ficheros <a href="https://pandoc.org/" target="_blank">Pandoc</a> y pasar la salida a un navegador tipo <a href="http://lynx.browser.org/" target="_blank">Lynx</a> o <a href="http://w3m.sourceforge.net/" target="_blank">w3m</a>.</p>
 
 <p>En una línea sería algo como:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">pandoc -t html ejemplo.md | lynx -stdin
 
-pandoc -t html ejemplo.md | w3m -T text/html</code></pre></div>
+<pre><code class="language-shell">pandoc -t html ejemplo.md | lynx -stdin
+
+pandoc -t html ejemplo.md | w3m -T text/html
+</code></pre>
+
 <p>Y otra es utilizar una <strong>aplicación específica</strong> para este fín como pueden ser
 <a href="https://github.com/mrchimp/mdr" title="Markdown reader with color" target="_blank">mdr</a>, <a href="http://brettterpstra.com/projects/mdless/" title="More Markdown, Less less" target="_blank">mdless</a> (del gran <a href="http://brettterpstra.com/" target="_blank">Brett Terpstra</a>) o <a href="https://github.com/axiros/terminal_markdown_viewer" title="Styled Terminal Markdown Viewer" target="_blank">mdv</a>.</p>
 
@@ -128,7 +122,10 @@ pandoc -t html ejemplo.md | w3m -T text/html</code></pre></div>
 <p>El visor utiliza colores, formateo de tablas y resaltado de código para mejorar la lectura del documento.</p>
 
 <p>Tenemos a nuestra disposición multitud de temas registrados en el <code>ansi_tables.json</code> localizado en:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">pip show mdv | grep Location </code></pre></div>
+
+<pre><code class="language-shell">pip show mdv | grep Location 
+</code></pre>
+
 <p>En este fichero podemos añadir o editar un tema existente. Este es el que utilizo yo:</p>
 
 <pre><code>   &quot;000.1331&quot;: {

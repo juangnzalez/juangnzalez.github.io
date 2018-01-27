@@ -8,7 +8,7 @@
  Googler es una herramienta para consultar en Google (Web y News) desde la línea de comandos. Muestra el título, URL y resumen de cada resultado, que se puede abrir directamente en un navegador.
  Principales características  Se puede integrar con un navegador basado en texto. Podemos definir el número de resultados a mostrar y desde qué posición se empezarán a mostrar.'>
 
-<meta property='og:title' content='Googler: googleando desde la línea de comandos • Línea de Comandos'>
+<meta property='og:title' content='Googler: googleando desde la línea de comandos - Línea de Comandos'>
 <meta property='og:description' content='Googler: Googleando desde la línea de comandos Del sitio web de jarun/googler: Google Search, Google Site Search, Google News from the terminal
  Googler es una herramienta para consultar en Google (Web y News) desde la línea de comandos. Muestra el título, URL y resumen de cada resultado, que se puede abrir directamente en un navegador.
  Principales características  Se puede integrar con un navegador basado en texto. Podemos definir el número de resultados a mostrar y desde qué posición se empezarán a mostrar.'>
@@ -18,7 +18,7 @@
 
 <meta name="generator" content="Hugo 0.34" />
 
-  <title>Googler: googleando desde la línea de comandos • Línea de Comandos</title>
+  <title>Googler: googleando desde la línea de comandos - Línea de Comandos</title>
   <link rel='canonical' href='http://juangonzalez.com.es/posts/googleando_desde_cli/'>
   
   
@@ -37,7 +37,7 @@
         <nav id='main-menu' class='main-menu-container' aria-label=''>
   <ul class='main-menu'>
   <li>
-      <a href='https://github.com/MunifTanjim/minimo'>Repo</a>
+      <a href='http://juangonzalez.com.es'> inicio </a>
     </li>
   
   </ul>
@@ -78,15 +78,6 @@
 
   
   
-<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-  
-  <circle cx="12" cy="12" r="10"/>
-  <polyline points="12 6 12 12 15 15"/>
-  
-</svg>
-
-</span>
-
 
 </div>
 
@@ -193,11 +184,14 @@ Muestra el título, URL y resumen de cada resultado, que se puede abrir directam
 <li>Nos registramos en <a href="https://mercury.postlight.com/web-parser/" target="_blank">Mercury Web Parser</a> e instalamos un <em>parseador</em> para <em>json</em> como por ejemplo <a href="https://stedolan.github.io/jq/" target="_blank">jq</a></li>
 <li>Creamos un pequeño script (<code>reader</code>) con los parámetros necesarios para lanzar <em>reader.py</em>, le damos permisos de ejecución y nos aseguramos de que esté en un directorio del <code>PATH</code></li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">reader.py $1 -k <span style="color:#e6db74">&#34;obtener APP KEY de Mercury Web Parser API&#34;</span> -w <span style="color:#ae81ff">80</span> | jq -r <span style="color:#e6db74">&#39;[
-</span><span style="color:#e6db74">    (if .title then &#34;# &#34;+.title else empty end),
-</span><span style="color:#e6db74">    (if .author then .author else empty end),
-</span><span style="color:#e6db74">    .content.text
-</span><span style="color:#e6db74">] | join(&#34;\n\n&#34;)&#39;</span> | w3m</code></pre></div>
+
+<pre><code class="language-bash">reader.py $1 -k &quot;obtener APP KEY de Mercury Web Parser API&quot; -w 80 | jq -r '[
+    (if .title then &quot;# &quot;+.title else empty end),
+    (if .author then .author else empty end),
+    .content.text
+] | join(&quot;\n\n&quot;)' | w3m
+</code></pre>
+
 <ul>
 <li>Lanzamos nuestro lector de noticias_ con <code>googler -N -l es -c es -n 5 --url-handler reader noticias</code></li>
 </ul>
