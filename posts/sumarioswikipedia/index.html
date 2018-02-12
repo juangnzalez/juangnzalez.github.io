@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang='es'>
+
+<head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='A diario consultamos la Wikipedia. En muchas ocasiones no necesitamos leemos el artículo entero, nos basta con las primeras líneas para resolver la duda que tenemos.
+ En este post presentaré dos aplicaciones muy útiles para realizar estas consultas rápidas a la Wikipedia. Las dos son muy parecidas, difieren en los requisitos y poco más.
+Observaréis que los resúmenes que nos devuelven las aplicaciones son las líneas que van desde el título hasta el inicio de la Tabla de Contenidos del artículo que se ajuste a nuestra consulta.'>
+
+<meta property='og:title' content='Obteniendo resúmenes de la Wikipedia desde CLI - Línea de Comandos'>
+<meta property='og:description' content='A diario consultamos la Wikipedia. En muchas ocasiones no necesitamos leemos el artículo entero, nos basta con las primeras líneas para resolver la duda que tenemos.
+ En este post presentaré dos aplicaciones muy útiles para realizar estas consultas rápidas a la Wikipedia. Las dos son muy parecidas, difieren en los requisitos y poco más.
+Observaréis que los resúmenes que nos devuelven las aplicaciones son las líneas que van desde el título hasta el inicio de la Tabla de Contenidos del artículo que se ajuste a nuestra consulta.'>
+<meta property='og:url' content='http://juangonzalez.com.es/posts/sumarioswikipedia/'>
+<meta property='og:site_name' content='Línea de Comandos'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts'><meta property='article:published_time' content='2018-02-11T18:40:18&#43;01:00'/><meta property='article:modified_time' content='2018-02-11T18:40:18&#43;01:00'/><meta name='twitter:card' content='summary'><meta name='twitter:site' content='@juangnzalez'>
+
+<meta name="generator" content="Hugo 0.34" />
+
+  <title>Obteniendo resúmenes de la Wikipedia desde CLI - Línea de Comandos</title>
+  <link rel='canonical' href='http://juangonzalez.com.es/posts/sumarioswikipedia/'>
+  
+  
+  <link rel='icon' href='/favicon.ico'>
+<link rel='stylesheet' href='/assets/css/main.f0e8df71.css'><link rel='stylesheet' href='/css/custom.css'>
+</head>
+
+
+<body class='page type-posts'>
+  <div class='site'>
+
+    <a class='screen-reader' href='#main'></a>
+
+    <header id='header' class='header-container'>
+      <div class='header site-header'>
+        <nav id='main-menu' class='main-menu-container' aria-label=''>
+  <ul class='main-menu'>
+  <li>
+      <a href='http://juangonzalez.com.es'> inicio </a>
+    </li>
+  
+  </ul>
+</nav>
+
+        <div class='header-info'>
+          
+          <p class='site-title title'>Línea de Comandos</p>
+          
+          <p class='site-description subtitle'>Blog sobre el uso y disfrute de la Línea de Comandos</p>
+        </div>
+      </div>
+    </header>
+
+
+<main id='main' class='main'>
+  <article lang='es' class='entry'>
+    <header class='header-container'>
+  <div class='header entry-header'>
+    <div class='header-info'>
+      <h1 class='title'>Obteniendo resúmenes de la Wikipedia desde CLI</h1>
+      
+
+    </div>
+    
+<div class='meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader'> </span>
+  <time class='date' datetime='2018-02-11T18:40:18&#43;01:00'>2018, Feb 11</time>
+</span>
+
+  
+  
+
+</div>
+
+
+  </div>
+</header>
+
+    
+    
+
+    <div class='entry-content'>
+  
+
+<blockquote>
+<p>A diario consultamos la <a href="https://www.wikipedia.org/" target="_blank">Wikipedia</a>. En muchas ocasiones no necesitamos leemos el artículo entero, nos basta con las primeras líneas para resolver la duda que tenemos.</p>
+</blockquote>
+
+<p>En este post presentaré dos aplicaciones muy útiles para realizar estas consultas rápidas a la <a href="https://www.wikipedia.org/" target="_blank">Wikipedia</a>. Las dos son muy parecidas, difieren en los requisitos y poco más.</p>
+
+<p>Observaréis que los <em>resúmenes</em> que nos devuelven las aplicaciones son las líneas que van desde el título hasta el inicio de la <em>Tabla de Contenidos</em> del artículo que se ajuste a nuestra consulta.</p>
+
+<h2 id="consultas-rápidas-en-la-wikipedia-wiki">Consultas rápidas en la Wikipedia: WIKI</h2>
+
+<p>La primera de las dos aplicaciones que comentaba en la introducción es <strong>WIKI</strong> que según podemos leer en <a href="https://github.com/walle/wiki" target="_blank">walle/wiki: Command line tool to fetch summaries from MediaWiki wikis, like Wikipedia</a> es una aplicación para obtener resúmenes de la Wikipedia desde la línea de comandos. Además puede obtener resúmenes de cualquier <strong>wiki</strong> creado con el software de <a href="https://www.mediawiki.org/wiki/MediaWiki/es" target="_blank">MediaWiki</a> y que tenga la <a href="https://www.mediawiki.org/wiki/API:Main_page/es" target="_blank">API</a> activa. Esta es para mí una de las características más reseñables de esta aplicación y que puede hacer que la elijamos frente a la siguiente.</p>
+
+<h3 id="instalación">Instalación</h3>
+
+<p>En primer lugar necesitamos tener instalado <a href="https://golang.org/" target="_blank">The Go Programming Language</a> en nuestro equipo e incluir en nuestro <code>PATH</code> el directorio <code>$GOPATH/bin</code> (<a href="https://golang.org/doc/code.html#GOPATH" target="_blank">How to Write Go Code - The Go Programming Language</a>)</p>
+
+<p>A continuación con un <code>go get github.com/walle/wiki/cmd/wiki</code> tendremos la aplicación lista para usar.</p>
+
+<h3 id="uso">Uso</h3>
+
+<p>Un inicio puede ser lanzar un <code>wiki -h</code></p>
+
+<p>Según la ayuda con <code>wiki -l es CONSULTA</code> obtendremos resultados para nuestra consulta desde <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada" target="_blank">Wikipedia, la enciclopedia libre</a></p>
+
+<p>En la presentación de esta aplicación comentaba que la posibilidad de consultar con ella otras wikis además de la Wikipedia era una característica que para mí podía resultar determinante a la hora de elegirla frente a otras pero me temo que no he conseguido que funcione.
+El ejemplo que proponen en la web del repositorio de la aplicación <code>wiki -u https://en.wikiversity.org/w/api.php physics</code> sí que devuelve un resultado pero en los intentos que he hecho para lanzar consultas sobre <a href="https://es.wiktionary.org/wiki/Wikcionario:Portada" target="_blank">Wikcionario</a> o sobre <a href="https://wiki.archlinux.org/" target="_blank">ArchWiki</a> nunca he conseguido resultados. Por ejemplo un <code>wiki -u https://es.wiktionary.org/w/api.php tortuga</code> devuelve</p>
+
+<pre><code>No such page
+Create it on: https://es.wiktionary.org/wiki/tortuga
+</code></pre>
+
+<p>Lo cual no es cierto. Esta <a href="https://es.wiktionary.org/wiki/tortuga" target="_blank">URL</a> sí que existe.</p>
+
+<p>Intentaré ponerme en contacto con el autor en GitHub y le consultaré este punto. Si tengo noticias al respecto actualizaré el post.</p>
+
+<h2 id="wikit-obtener-resúmenes-de-la-wikipedia-de-forma-fácil">WIKIT. Obtener resúmenes de la Wikipedia de forma fácil.</h2>
+
+<p>La segunda aplicación es <strong>WIKIT</strong> <a href="https://github.com/KorySchneider/wikit" target="_blank">KorySchneider/wikit: Wikipedia summaries from the command line</a> que al igual que la anterior nos lanzará una consulta sobre la Wikipedia y nos devolverá las líneas comprendidas ente el título y la <em>Tabla de Contenidos</em>.</p>
+
+<h3 id="instalación-1">Instalación</h3>
+
+<p>El requisito previo es tener instalado en nuestro sistema el gestor de paquetes <a href="https://www.npmjs.com/" target="_blank">npm</a>.</p>
+
+<p>Con un <code>npm install wikit -g</code> tendremos la aplicación lista para usar en nuestro sistema.</p>
+
+<h3 id="uso-1">Uso</h3>
+
+<p>Lanzamos la aplicación con un <code>wikit &lt;consulta&gt; [-opciones]</code>.</p>
+
+<p>Para consulta <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada" target="_blank">Wikipedia, la enciclopedia libre</a> utilizaremos la opción <code>-l es</code>, por ejemplo <code>wikit línea de comandos -l es</code></p>
+
+<p>Con la opción <code>-b</code> abriremos el artículo completo resultado de la búsqueda en Wikipedia en el navegador que tengamos definido por defecto en nuestro sistema.</p>
+
+<p>Es posible que nuestra búsqueda devuelva más de un artículo. En este caso la aplicación abrirá la página de la Wikipedia con los posibles resultados en nuestro navegador por defecto.</p>
+
+<h2 id="conclusión">Conclusión.</h2>
+
+<p>Para la consulta básica y rápida en Wikipedia cualquiera de las dos aplicaciones funciona muy bien. La ejecución de ambas tiene pocas opciones; personalmente no creo que se necesiten más aunque sí que sería deseable que funcionaran todas las que ofrecen. En cualquier caso creo que son dos aplicaciones muy útiles.</p>
+
+<p>Un pequeño resumen para terminar:</p>
+
+<p><a href="https://asciinema.org/a/viSUlqiQEwkS0yweEjpfglIOw" target="_blank"><img src="https://asciinema.org/a/viSUlqiQEwkS0yweEjpfglIOw.png" alt="asciicast" /></a></p>
+
+</div>
+
+    
+<footer class='entry-footer-container'>
+  <div class='entry-footer'>
+  
+  </div>
+</footer>
+
+
+  </article>
+  
+<nav class='entry-nav-container'>
+  <div class='entry-nav'><div class='prev-entry'>
+      <a href='/posts/googleando_desde_cli/'>
+        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="20" y1="12" x2="4" y2="12"/>
+  <polyline points="10 18 4 12 10 6"/>
+  
+</svg>
+ </span>
+        <span class='screen-reader'>: </span>Googler: googleando desde la línea de comandos</a>
+    </div></div>
+</nav>
+
+  
+</main>
+
+    <footer id='footer' class='footer-container'>
+      <div class='footer'>
+        <div class='social-menu-container'>
+  <nav aria-label=''>
+    <ul class='social-menu'><li>
+        <a href='https://github.com/juangnzalez' target='_blank' rel='noopener'>
+          <span class='screen-reader'></span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://twitter.com/MunifTanjim' target='_blank' rel='noopener'>
+          <span class='screen-reader'></span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+  
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</div>
+        <div class='copyright'>
+  <p>
+        
+          
+        
+      
+
+       &copy; 2017-2018 Juan González 
+  </p>
+</div>
+
+      </div>
+    </footer>
+
+  </div><script src='/assets/js/main.5871befd.js'></script><script src='/js/custom.js'></script></body>
+
+</html>
+

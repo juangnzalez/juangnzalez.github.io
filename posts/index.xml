@@ -5,10 +5,21 @@
     <link>http://juangonzalez.com.es/posts/</link>
     <description>Recent content in Posts on Línea de Comandos</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 11 Oct 2017 18:42:08 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 11 Feb 2018 18:40:18 +0100</lastBuildDate>
     
 	<atom:link href="http://juangonzalez.com.es/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Obteniendo resúmenes de la Wikipedia desde CLI</title>
+      <link>http://juangonzalez.com.es/posts/sumarioswikipedia/</link>
+      <pubDate>Sun, 11 Feb 2018 18:40:18 +0100</pubDate>
+      
+      <guid>http://juangonzalez.com.es/posts/sumarioswikipedia/</guid>
+      <description>A diario consultamos la Wikipedia. En muchas ocasiones no necesitamos leemos el artículo entero, nos basta con las primeras líneas para resolver la duda que tenemos.
+ En este post presentaré dos aplicaciones muy útiles para realizar estas consultas rápidas a la Wikipedia. Las dos son muy parecidas, difieren en los requisitos y poco más.
+Observaréis que los resúmenes que nos devuelven las aplicaciones son las líneas que van desde el título hasta el inicio de la Tabla de Contenidos del artículo que se ajuste a nuestra consulta.</description>
+    </item>
     
     <item>
       <title>Googler: googleando desde la línea de comandos</title>
