@@ -4,12 +4,14 @@
 <head>
   <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<meta name='description' content='iTunes es la aplicación que utilizo para manejar mi biblioteca de música y soy usuario de Música - Apple (ES). En este post hablaré sobre dos aplicaciones que utilizo para controlar iTunes desde la Línea de Comandos.
- He de comenzar diciendo que no he encontrado una aplicación que tenga todas las opciones que necesito pero con las dos que os presento en este post consigo resolver bastante bien la tarea.'>
+<meta name='description' content='iTunes es la aplicación que utilizo para manejar mi biblioteca de música .En este post hablaré sobre dos aplicaciones que utilizo para controlar iTunes desde la Línea de Comandos.
+ He de comenzar diciendo que no he encontrado una aplicación que tenga todas las opciones que necesito pero con las dos que os presento en este post consigo resolver bastante bien la tarea.
+iTunes-remote. mischah/itunes-remote: Control iTunes via CLI'>
 
 <meta property='og:title' content='Manejando iTunes desde la Línea de Comandos - Línea de Comandos'>
-<meta property='og:description' content='iTunes es la aplicación que utilizo para manejar mi biblioteca de música y soy usuario de Música - Apple (ES). En este post hablaré sobre dos aplicaciones que utilizo para controlar iTunes desde la Línea de Comandos.
- He de comenzar diciendo que no he encontrado una aplicación que tenga todas las opciones que necesito pero con las dos que os presento en este post consigo resolver bastante bien la tarea.'>
+<meta property='og:description' content='iTunes es la aplicación que utilizo para manejar mi biblioteca de música .En este post hablaré sobre dos aplicaciones que utilizo para controlar iTunes desde la Línea de Comandos.
+ He de comenzar diciendo que no he encontrado una aplicación que tenga todas las opciones que necesito pero con las dos que os presento en este post consigo resolver bastante bien la tarea.
+iTunes-remote. mischah/itunes-remote: Control iTunes via CLI'>
 <meta property='og:url' content='http://juangonzalez.com.es/posts/itunesdesdecli/'>
 <meta property='og:site_name' content='Línea de Comandos'>
 <meta property='og:type' content='article'><meta property='article:section' content='Posts'><meta property='article:published_time' content='2018-02-16T17:33:07&#43;01:00'/><meta property='article:modified_time' content='2018-02-16T17:33:07&#43;01:00'/><meta name='twitter:card' content='summary'><meta name='twitter:site' content='@juangnzalez'>
@@ -90,7 +92,7 @@
   
 
 <blockquote>
-<p>iTunes es la aplicación que utilizo para manejar mi biblioteca de música y soy usuario de <a href="https://www.apple.com/es/music/" target="_blank">Música - Apple (ES)</a>. En este post hablaré sobre dos aplicaciones que utilizo para controlar <em>iTunes</em> desde la <em>Línea de Comandos</em>.</p>
+<p>iTunes es la aplicación que utilizo para manejar mi biblioteca de música .En este post hablaré sobre dos aplicaciones que utilizo para controlar <em>iTunes</em> desde la <em>Línea de Comandos</em>.</p>
 </blockquote>
 
 <p>He de comenzar diciendo que no he encontrado una aplicación que tenga todas las opciones que necesito pero con las dos que os presento en este post consigo resolver bastante bien la tarea.</p>
@@ -99,13 +101,13 @@
 
 <p><a href="https://github.com/mischah/itunes-remote" target="_blank">mischah/itunes-remote: Control iTunes via CLI</a></p>
 
-<p>Esta aplicación es la más completa que he encontrado para interactuar con la biblioteca de iTunestunes.</p>
+<p>Esta aplicación es la más completa que he encontrado para interactuar con la biblioteca de <em>iTunes</em>.</p>
 
 <h3 id="instalación">Instalación</h3>
 
 <p>Requiere del gestor de paquetes <a href="https://www.npmjs.com/" target="_blank">npm</a></p>
 
-<p>Una vez cubiero este requerimiento solo tenemos que hacer un</p>
+<p>Una vez cubierto este requerimiento solo tenemos que hacer un</p>
 
 <pre><code>npm install itunes-remote -g
 </code></pre>
@@ -118,7 +120,7 @@
 
 <p>El primer comando que le pasamos es un <code>help</code> con lo que se nos muestran todas las opciones disponibles.</p>
 
-<p>Para mi las dos más interesantes de esta aplicación son la de <code>play {artist,album} y la de</code>seacrh`.</p>
+<p>Para mí las dos más interesantes de esta aplicación son la de <code>play {artist,album}</code> y la de <code>search</code>.</p>
 
 <h4 id="opción-search">Opción <code>search</code></h4>
 
@@ -126,13 +128,13 @@
 
 <h4 id="opción-play">Opción <code>play</code></h4>
 
-<p>En lugar de la búsqueda previa pdemos empezar la reproducción de música con una lista de canciones de un artista o grupo determinado. Para ello contamos con el comando &lsquo;play {artist,album}&rsquo;.</p>
+<p>En lugar de la búsqueda previa podemos empezar la reproducción de música con una lista de canciones de un artista o grupo determinado. Para ello contamos con el comando <code>play {artist,album}</code>.</p>
 
-<p>Un <code>play artist</code> nos creará una lista de los artistas/grupos que tengamos en nuestra biblioteca y nos pedirá qu seleccionemos uno. Con nuestra elección creará una lista de reproducción con todas las canciones que tengamos en iTunes para el artista/grupo seleccionado.</p>
+<p>Un <code>play artist</code> nos creará una lista de los artistas/grupos que tengamos en nuestra biblioteca y nos pedirá que seleccionemos uno. Con nuestra elección creará una lista de reproducción con todas las canciones que tengamos en <em>iTunes</em> para el artista/grupo seleccionado.</p>
 
-<p>El comando <code>play album</code> es similar. Se genera una lista con los discos de nuestra colección, seleccionamos uno y comienza la reproducción de la lsita de reproducción que se genera.</p>
+<p>El comando <code>play album</code> es similar. Se genera una lista con los discos de nuestra colección, seleccionamos uno y comienza la reproducción de la lista de reproducción que se genera.</p>
 
-<p>Además de estos dos comandos disponemos de los <code>palys</code>, <code>stop</code>, <code>pause</code>, <code>next</code>, <code>previous</code> y <code>stop</code> esperados pero no tenemos ninguno para controlar el volumen o mostrar e título de la pista que se está reproduciendo en ese momento. Para resolver esta carencia tenemos la aplicación que comento a continuación.</p>
+<p>Además de estos dos comandos disponemos de los <code>play</code>, <code>stop</code>, <code>pause</code>, <code>next</code>, <code>previous</code> y <code>stop</code> esperados pero no tenemos ninguno para controlar el volumen o mostrar e título de la pista que se está reproduciendo en ese momento. Para resolver esta carencia tenemos la aplicación que comento a continuación.</p>
 
 <h2 id="m-cli-la-navaja-suiza-para-macos"><code>m-cli</code> la <em>navaja suiza</em> para macOS</h2>
 
@@ -140,37 +142,39 @@
 
 <h3 id="instalación-1">Instalación</h3>
 
-<p>Con un <code>brew install m-cli</code> tendremos el paquete instalado en nustro sistema. Duso que no tengas <strong>Homebrew</strong> instalado, pero por si acaso <a href="https://brew.sh/index_es.html" target="_blank">Homebrew — El gestor de paquetes para macOS que faltaba</a>.</p>
+<p>Con un <code>brew install m-cli</code> tendremos el paquete instalado en nuestro sistema. Dudo que no tengas <strong>Homebrew</strong> instalado, pero por si acaso  &hellip; <a href="https://brew.sh/index_es.html" target="_blank">Homebrew — El gestor de paquetes para macOS que faltaba</a>.</p>
 
 <h3 id="uso-1">Uso</h3>
 
-<p>Es imprescindible consultar la ayuda de este pauete (<code>m help</code>). Disponemos de muchos comandos u opciones muy interesantes pero las que nos interesan en este post son la de <code>volume</code> y la obvia <code>itunes</code>.</p>
+<p>Es imprescindible consultar la ayuda de este paquete (<code>m help</code>). Disponemos de muchos comandos u opciones muy interesantes pero las que nos interesan en este post son la de <code>volume</code> y la obvia <code>itunes</code>.</p>
 
 <h4 id="opción-volume">Opción <code>volume</code></h4>
 
-<p>Si lanzamos un `m volume desde el prompt de nuestra shell obtendremos el estado actual del volumen de la salida activa de sonido en nuestro sistema en una escala de 0 a 100.</p>
+<p>Si lanzamos un <code>m volume</code> desde el prompt de nuestra shell obtendremos el estado actual del volumen de la salida activa de sonido en nuestro sistema en una escala de 0 a 100.</p>
 
 <p>Con <code>volume &lt;n&gt;</code> siendo <code>&lt;n&gt;</code> un número entre 0 y 100, fijaremos el volumen del sonido.</p>
 
 <h4 id="opción-itunes">Opción <code>itunes</code></h4>
 
-<p>Con <code>m itunes help</code> obtendremos un listado de os parámetros que le podemos pasar a esta opción.</p>
+<p>Con <code>m itunes help</code> obtendremos un listado de los parámetros que le podemos pasar a esta opción.</p>
 
-<p>Disponemos de <code>play</code>, <code>stop</code>, <code>next</code>, <code>prev</code>, <code>pause</code>. Todas estas son acciones que puedo lanzar desde las teclas <em>multimedia</em> del teclado o desde los controles del altavoz bluetooh que vengo utilizando.</p>
+<p>Disponemos de <code>play</code>, <code>stop</code>, <code>next</code>, <code>prev</code>, <code>pause</code>. Todas estas son acciones que puedo lanzar desde las teclas <em>multimedia</em> del teclado o desde los controles del altavoz bluetooh que vengo utilizando con los que nos las suelo usar.</p>
 
-<p>Los parámetros que me son útiles del comando &rsquo;m itunes&rsquo; son:</p>
+<p>Los parámetros que me son útiles del comando <code>m itunes</code> son:</p>
 
 <ul>
-<li><p><code>status</code> que nos muestra el artista/título de la canción qe se está reproducciendo en ese momento.</p></li>
+<li><p><code>status</code> que nos muestra el artista/título de la canción que se está reproducciendo en ese momento.</p></li>
 
-<li><p>itunes col {op,down,#} con la que controlamos el volumen. Esta opción no se ofrece en <code>itunes-remote</code></p></li>
+<li><p><code>itunes col {op,down,#}</code> con la que controlamos el volumen. Tenemos dividido el volumen en una escala de 0 a 100 como ya comentaba en la descripción de la opción <code>volume</code>. Con <code>vol up</code> incrementamos el nivel actual en <em>5</em> unidades, con <code>vol down</code> redusimos el volumen en <em>5</em> unidades. Por último <code>m itunes vol #</code> es equivalente al ya descrito <code>m volume</code>.</p></li>
 </ul>
 
-<p>## Conclusión.</p>
+<h2 id="conclusión">Conclusión.</h2>
 
 <p>A falta de la aplicación <em>definitiva</em> para línea de comandos que nos permita controlar la reproducción de música almacenada en nuestra biblioteca <em>iTunes</em> creo que con estas dos aplicaciones resolvemos bastante bien la tarea.</p>
 
-<p>Como siempre, in pequeño gif resumen de los comentado en el post.</p>
+<p>Como siempre, un pequeño gif resumen de los comentado en el post.</p>
+
+<p><a href="https://asciinema.org/a/xReWVaPt4MkQv90AyEEHgv50K" target="_blank"><img src="https://asciinema.org/a/xReWVaPt4MkQv90AyEEHgv50K.png" alt="asciicast" /></a></p>
 
 </div>
 

@@ -16,8 +16,9 @@
       <pubDate>Fri, 16 Feb 2018 17:33:07 +0100</pubDate>
       
       <guid>http://juangonzalez.com.es/posts/itunesdesdecli/</guid>
-      <description>iTunes es la aplicación que utilizo para manejar mi biblioteca de música y soy usuario de Música - Apple (ES). En este post hablaré sobre dos aplicaciones que utilizo para controlar iTunes desde la Línea de Comandos.
- He de comenzar diciendo que no he encontrado una aplicación que tenga todas las opciones que necesito pero con las dos que os presento en este post consigo resolver bastante bien la tarea.</description>
+      <description>iTunes es la aplicación que utilizo para manejar mi biblioteca de música .En este post hablaré sobre dos aplicaciones que utilizo para controlar iTunes desde la Línea de Comandos.
+ He de comenzar diciendo que no he encontrado una aplicación que tenga todas las opciones que necesito pero con las dos que os presento en este post consigo resolver bastante bien la tarea.
+iTunes-remote. mischah/itunes-remote: Control iTunes via CLI</description>
     </item>
     
     <item>
