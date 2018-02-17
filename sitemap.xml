@@ -3,6 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://juangonzalez.com.es/posts/itunesdesdecli/</loc>
+    <lastmod>2018-02-16T17:33:07+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://juangonzalez.com.es/posts/sumarioswikipedia/</loc>
+    <lastmod>2018-02-11T18:40:18+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://juangonzalez.com.es/posts/googleando_desde_cli/</loc>
+    <lastmod>2017-10-11T18:42:08+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://juangonzalez.com.es/posts/visualizando_ficheros_markdown/</loc>
+    <lastmod>2017-10-04T18:55:17+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://juangonzalez.com.es/posts/notasconterminalvelocity/</loc>
+    <lastmod>2017-09-27T17:33:07+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://juangonzalez.com.es/posts/entorno_oracle_plsql/</loc>
+    <lastmod>2017-09-21T17:45:08+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://juangonzalez.com.es/posts/less_f/</loc>
+    <lastmod>2017-09-18T16:24:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://juangonzalez.com.es/posts/presentacion/</loc>
+    <lastmod>2017-09-14T18:52:44+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://juangonzalez.com.es/authors/</loc>
     <priority>0</priority>
   </url>
@@ -14,6 +54,13 @@
   
   <url>
     <loc>http://juangonzalez.com.es/</loc>
+    <lastmod>2018-02-16T17:33:07+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://juangonzalez.com.es/posts/</loc>
+    <lastmod>2018-02-16T17:33:07+01:00</lastmod>
     <priority>0</priority>
   </url>
   
