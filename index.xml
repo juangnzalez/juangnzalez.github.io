@@ -5,10 +5,20 @@
     <link>http://juangonzalez.com.es/</link>
     <description>Recent content on Línea de Comandos</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 11 Feb 2018 18:40:18 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 16 Feb 2018 17:33:07 +0100</lastBuildDate>
     
 	<atom:link href="http://juangonzalez.com.es/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Manejando iTunes desde la Línea de Comandos</title>
+      <link>http://juangonzalez.com.es/posts/itunesdesdecli/</link>
+      <pubDate>Fri, 16 Feb 2018 17:33:07 +0100</pubDate>
+      
+      <guid>http://juangonzalez.com.es/posts/itunesdesdecli/</guid>
+      <description>iTunes es la aplicación que utilizo para manejar mi biblioteca de música y soy usuario de Música - Apple (ES). En este post hablaré sobre dos aplicaciones que utilizo para controlar iTunes desde la Línea de Comandos.
+ He de comenzar diciendo que no he encontrado una aplicación que tenga todas las opciones que necesito pero con las dos que os presento en este post consigo resolver bastante bien la tarea.</description>
+    </item>
     
     <item>
       <title>Obteniendo resúmenes de la Wikipedia desde CLI</title>

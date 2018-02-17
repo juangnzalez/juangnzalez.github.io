@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://juangonzalez.com.es/posts/itunesdesdecli/</loc>
+    <lastmod>2018-02-16T17:33:07+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://juangonzalez.com.es/posts/sumarioswikipedia/</loc>
     <lastmod>2018-02-11T18:40:18+01:00</lastmod>
   </url>
@@ -49,13 +54,13 @@
   
   <url>
     <loc>http://juangonzalez.com.es/</loc>
-    <lastmod>2018-02-11T18:40:18+01:00</lastmod>
+    <lastmod>2018-02-16T17:33:07+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://juangonzalez.com.es/posts/</loc>
-    <lastmod>2018-02-11T18:40:18+01:00</lastmod>
+    <lastmod>2018-02-16T17:33:07+01:00</lastmod>
     <priority>0</priority>
   </url>
   
