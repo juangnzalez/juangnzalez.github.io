@@ -5,10 +5,22 @@
     <link>http://juangonzalez.com.es/posts/</link>
     <description>Recent content in Posts on Línea de Comandos</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 16 Feb 2018 17:33:07 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 24 Mar 2018 11:54:58 +0100</lastBuildDate>
     
 	<atom:link href="http://juangonzalez.com.es/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Usando Google Translate desde la línea de comandos</title>
+      <link>http://juangonzalez.com.es/posts/googletranslatecli/</link>
+      <pubDate>Sat, 24 Mar 2018 11:54:58 +0100</pubDate>
+      
+      <guid>http://juangonzalez.com.es/posts/googletranslatecli/</guid>
+      <description>En este post comentaré el uso básico de dos aplicaciones con las que podremos utilizar Google Translate para traducir palabras y oraciones desde la línea de comandos.
+Trino, traducción fácil desde CLI. GitHub - eneserdogan/trino: Trino: Master your translations with command line!
+Esta es, de las dos, la más sencilla y con menor numero de opciones pero no por ello menos útil.
+Según su autor, trino permite una rápida y fácil traducción de palabras y frases desde la línea de comandos.</description>
+    </item>
     
     <item>
       <title>Manejando iTunes desde la Línea de Comandos</title>

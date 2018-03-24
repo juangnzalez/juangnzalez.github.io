@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang='es'>
+
+<head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='En este post comentaré el uso básico de dos aplicaciones con las que podremos utilizar Google Translate para traducir palabras y oraciones desde la línea de comandos.
+Trino, traducción fácil desde CLI. GitHub - eneserdogan/trino: Trino: Master your translations with command line!
+Esta es, de las dos, la más sencilla y con menor numero de opciones pero no por ello menos útil.
+Según su autor, trino permite una rápida y fácil traducción de palabras y frases desde la línea de comandos.'>
+
+<meta property='og:title' content='Usando Google Translate desde la línea de comandos - Línea de Comandos'>
+<meta property='og:description' content='En este post comentaré el uso básico de dos aplicaciones con las que podremos utilizar Google Translate para traducir palabras y oraciones desde la línea de comandos.
+Trino, traducción fácil desde CLI. GitHub - eneserdogan/trino: Trino: Master your translations with command line!
+Esta es, de las dos, la más sencilla y con menor numero de opciones pero no por ello menos útil.
+Según su autor, trino permite una rápida y fácil traducción de palabras y frases desde la línea de comandos.'>
+<meta property='og:url' content='http://juangonzalez.com.es/posts/googletranslatecli/'>
+<meta property='og:site_name' content='Línea de Comandos'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts'><meta property='article:published_time' content='2018-03-24T11:54:58&#43;01:00'/><meta property='article:modified_time' content='2018-03-24T11:54:58&#43;01:00'/><meta name='twitter:card' content='summary'><meta name='twitter:site' content='@juangnzalez'>
+
+<meta name="generator" content="Hugo 0.37" />
+
+  <title>Usando Google Translate desde la línea de comandos - Línea de Comandos</title>
+  <link rel='canonical' href='http://juangonzalez.com.es/posts/googletranslatecli/'>
+  
+  
+  <link rel='icon' href='/favicon.ico'>
+<link rel='stylesheet' href='/assets/css/main.f0e8df71.css'><link rel='stylesheet' href='/css/custom.css'>
+</head>
+
+
+<body class='page type-posts'>
+  <div class='site'>
+
+    <a class='screen-reader' href='#main'></a>
+
+    <header id='header' class='header-container'>
+      <div class='header site-header'>
+        <nav id='main-menu' class='main-menu-container' aria-label=''>
+  <ul class='main-menu'>
+  <li>
+      <a href='http://juangonzalez.com.es'> inicio </a>
+    </li>
+  
+  </ul>
+</nav>
+
+        <div class='header-info'>
+          
+          <p class='site-title title'>Línea de Comandos</p>
+          
+          <p class='site-description subtitle'>Blog sobre el uso y disfrute de la Línea de Comandos</p>
+        </div>
+      </div>
+    </header>
+
+
+<main id='main' class='main'>
+  <article lang='es' class='entry'>
+    <header class='header-container'>
+  <div class='header entry-header'>
+    <div class='header-info'>
+      <h1 class='title'>Usando Google Translate desde la línea de comandos</h1>
+      
+
+    </div>
+    
+<div class='meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader'> </span>
+  <time class='date' datetime='2018-03-24T11:54:58&#43;01:00'>2018, Mar 24</time>
+</span>
+
+  
+  
+
+</div>
+
+
+  </div>
+</header>
+
+    
+    
+
+    <div class='entry-content'>
+  
+
+<p>En este post comentaré el uso básico de dos aplicaciones con las que
+podremos utilizar <strong>Google Translate</strong> para traducir palabras y oraciones desde
+la línea de comandos.</p>
+
+<h2 id="trino-traducción-fácil-desde-cli">Trino, traducción fácil desde CLI.</h2>
+
+<p><a href="https://github.com/eneserdogan/trino" target="_blank">GitHub - eneserdogan/trino: Trino: Master your translations with command line!</a></p>
+
+<p>Esta es, de las dos, la más sencilla y con menor numero de
+opciones pero no por ello menos
+útil.</p>
+
+<p>Según su autor, <strong>trino</strong> permite una rápida y fácil traducción de palabras y
+frases desde la línea de comandos.</p>
+
+<h3 id="instalación">Instalación.</h3>
+
+<p>Instalamos la aplicación desde el gestor de paquetes de <strong>Node</strong> <a href="https://www.npmjs.com/get-npm?utm_source=house&amp;utm_medium=homepage&amp;utm_campaign=free%20orgs&amp;utm_term=Install%20npm" target="_blank">npm</a></p>
+
+<pre><code>npm install -g trino
+</code></pre>
+
+<h3 id="uso">Uso</h3>
+
+<p>Al ejecutar <strong>trino</strong> se crea una <em>shell</em> en la que podemos lanzar dos
+comandos.</p>
+
+<ul>
+<li><code>trino [opciones] &lt;texto&gt; &lt;objetivo&gt;</code>.</li>
+</ul>
+
+<p>La salida de este comando será <code>Translation: &lt;resultado&gt;</code></p>
+
+<p>Podemos completar los parámetros con los que lanzamos el programa con el
+tabulador.</p>
+
+<p>Por ejemplo <code>trino &quot;Un ejemplo&quot; [Tab][Tab]</code> nos mostrará todos los códigos
+(2 caracteres) de los idiomas a los que podemos traducir la frase <em>Un
+ejemplo</em>.</p>
+
+<p>Como opciones tenemos <code>copy</code> que copia al porta papeles del sistema el
+resultado de la traducción.</p>
+
+<ul>
+<li><code>trino-dt &lt;texto&gt;</code>.</li>
+</ul>
+
+<p>La salida será <code>Detect: &lt;resultado&gt;</code> siendo <em>resultado</em> el idioma del
+<em>texto</em> que pasamos en la entrada.</p>
+
+<h2 id="translate-shell-solución-muy-completa-para-traducciones-desde-cli">Translate Shell. Solución muy completa para traducciones desde CLI.</h2>
+
+<p><a href="https://github.com/soimort/translate-shell" target="_blank">GitHub - soimort/translate-shell: Command-line translator using Google Translate, Bing Translator, Yandex.Translate, DeepL Translator, etc.</a></p>
+
+<p><strong>translate shell</strong> es un traductor para la línea de comandos que ofrece
+acceso fácil a varios motores de traducción.</p>
+
+<p>Estos motores son <strong>Google Translate</strong> (opción por defecto), <strong>Bing
+Translator</strong>, <strong>Yandex</strong>, <strong>DeepL Translator</strong> y <strong>Apertium</strong>.</p>
+
+<h3 id="instalación-1">Instalación.</h3>
+
+<p>Podemos clonar el repositorio en <a href="https://github.com/soimort/translate-shell" target="_blank"><strong>GitHub</strong></a>, utilizar algún gestor de paquetes o la opción más rápida, bajarnos el ejecutable en un directorio de nuestro <code>PATH</code> desde <em>git.io/trans</em>. En mi sistema sería algo como:</p>
+
+<pre><code>printenv | grep PATH
+cd /usr/local/bin
+wget git.io/trans
+chmod +x trans
+</code></pre>
+
+<h3 id="uso-1">Uso</h3>
+
+<p><strong>translate-shell</strong> ofrece muchas opciones que van desde usar la
+aplicación como un diccionario, identificar en qué lenguaje está una frase
+o palabra que le pasamos, traducir un fichero o página web e incluso hacer
+un <em>text-to-speech</em> con el resultado de la traducción que solicitemos.</p>
+
+<ul>
+<li>Traducir una palabra.</li>
+</ul>
+
+<p>Este sería el uso básico de la aplicación.</p>
+
+<pre><code>trans test
+</code></pre>
+
+<p>traduce la palabra <em>test</em> al idioma definido en nuestra variable de
+entorno <code>LANG</code>.</p>
+
+<p>Para traducir una palabra a un idioma determinado lanzamos la aplicación con
+<code>trans :fr prueba</code></p>
+
+<p>Podemos solicitar la traducción a más de un idioma concatenando sus
+códigos con un <em>+</em></p>
+
+<pre><code>trans :fr+en prueba
+</code></pre>
+
+<p>Para traducir una palabra especificando el idioma origen lo hacemos con un
+<code>trans es: prueba</code>.</p>
+
+<p>Podemos especificar idioma origen y destino para una traducción con</p>
+
+<pre><code>trans es:en prueba
+</code></pre>
+
+<ul>
+<li>Traducir una frase.</li>
+</ul>
+
+<p>Para traducir una frase la pasamos a la aplicación entrecomillada</p>
+
+<pre><code>trans :en &quot;Una prueba de traducción&quot;
+</code></pre>
+
+<ul>
+<li>Modo resumen</li>
+</ul>
+
+<p>El resultado de la traducción suele ser bastante extenso. Normalmente nos
+servirá con el modo resumen.</p>
+
+<pre><code>trans -b :es hola
+</code></pre>
+
+<ul>
+<li>Diccionario</li>
+</ul>
+
+<p><strong>Google Translate</strong> se puede usar como un diccionario si solicitamos la
+traducción de una palabra al mismo idioma de esta, es decir</p>
+
+<pre><code>trans prueba
+trans :es prueba
+</code></pre>
+
+<p>nos devolverá la definición de la palabra <em>prueba</em>.</p>
+
+<p>También podemos forzar este comportamiento añadiendo la opción <em>d</em></p>
+
+<pre><code>trans -d :es hola
+</code></pre>
+
+<ul>
+<li>Text-to-speech</li>
+</ul>
+
+<p>Podemos solicitar un <em>text-to-speech</em> pasando la opción <em>-play</em></p>
+
+<pre><code>trans -play &quot;Una prueba&quot;
+</code></pre>
+
+<p>y con <em>-speak</em> oiremos la palabra u oración que le pasemos</p>
+
+<pre><code>trans -speak &quot;Hello, how are you?&quot;
+</code></pre>
+
+<ul>
+<li>Ficheros y páginas web</li>
+</ul>
+
+<p>También podemos traducir ficheros de texto y páginas web</p>
+
+<pre><code>trans file://test.txt
+
+trans https://www.w3.org/
+</code></pre>
+
+<ul>
+<li>Shell</li>
+</ul>
+
+<p>Una opción muy útil es crear una <em>shell</em> para ir traduciendo las palabras que
+vayamos pasando.</p>
+
+<p>Fijamos cuál será el idioma de entrada y cuál será el de salida</p>
+
+<pre><code>trans -shell es:en
+</code></pre>
+
+<h2 id="resumen">Resumen</h2>
+
+<p>Un pequeño <em>gif</em> resumen con lo más destacado de este <em>post</em>.</p>
+
+<p><a href="https://asciinema.org/a/7E0mxK5fjXbWTGQIqySS4Uy2s" target="_blank"><img src="https://asciinema.org/a/7E0mxK5fjXbWTGQIqySS4Uy2s.png" alt="asciicast" /></a></p>
+
+</div>
+
+    
+<footer class='entry-footer-container'>
+  <div class='entry-footer'>
+  
+  </div>
+</footer>
+
+
+  </article>
+  
+<nav class='entry-nav-container'>
+  <div class='entry-nav'><div class='prev-entry'>
+      <a href='/posts/itunesdesdecli/'>
+        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="20" y1="12" x2="4" y2="12"/>
+  <polyline points="10 18 4 12 10 6"/>
+  
+</svg>
+ </span>
+        <span class='screen-reader'>: </span>Manejando iTunes desde la Línea de Comandos</a>
+    </div></div>
+</nav>
+
+  
+</main>
+
+    <footer id='footer' class='footer-container'>
+      <div class='footer'>
+        <div class='social-menu-container'>
+  <nav aria-label=''>
+    <ul class='social-menu'><li>
+        <a href='https://github.com/juangnzalez' target='_blank' rel='noopener'>
+          <span class='screen-reader'></span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://twitter.com/MunifTanjim' target='_blank' rel='noopener'>
+          <span class='screen-reader'></span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+  
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</div>
+        <div class='copyright'>
+  <p>
+        
+          
+        
+      
+
+       &copy; 2017-2018 Juan González 
+  </p>
+</div>
+
+      </div>
+    </footer>
+
+  </div><script src='/assets/js/main.5871befd.js'></script><script src='/js/custom.js'></script></body>
+
+</html>
+
