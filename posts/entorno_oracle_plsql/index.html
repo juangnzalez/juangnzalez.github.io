@@ -96,12 +96,12 @@
 
 <p>Nos traemos la imagen</p>
 
-<pre><code>docker pull sath89/oracle-xe-11g
+<pre><code class="language-bash">docker pull sath89/oracle-xe-11g
 </code></pre>
 
 <p>Arrancamos un contenedor exponiendo el puerto <em>1521</em> sin más. Tenemos alguna opción más pero como demostración nos sirve así.</p>
 
-<pre><code>docker run -d -p 1521:1521 sath89/oracle-xe-11g
+<pre><code class="language-bash">docker run -d -p 1521:1521 sath89/oracle-xe-11g
 </code></pre>
 
 <p>Mientras se carga la imagen y arranca el contenedor, podemos ir descargando en otra máquina una imagen con el <a href="http://www.oracle.com/technetwork/database/features/instant-client/index-097480.html">Oracle Instant Client</a>.</p>
@@ -110,12 +110,12 @@
 
 <p>Seguimos las instrucciones que nos sugieren para obtener esta imagen <strong>recordando</strong> hacer un <code>docker login</code> previo.</p>
 
-<pre><code>docker pull store/oracle/database-instantclient:12.2.0.1
+<pre><code class="language-bash">docker pull store/oracle/database-instantclient:12.2.0.1
 </code></pre>
 
 <p>A estas alturas ya tendremos el contenedor con la <em>Oracle Express Edition 11g</em> corriendo con lo que podremos crear un contenedor con la imagen del <em>Oracle Instant Client</em> y utilizarlo para conectarnos con la base de datos.</p>
 
-<pre><code>docker run -ti --rm store/oracle/database-instantclient:12.2.0.1 sqlplus system/oracle@192.168.0.3/xe
+<pre><code class="language-bash">docker run -ti --rm store/oracle/database-instantclient:12.2.0.1 sqlplus system/oracle@192.168.0.3/xe
 </code></pre>
 
 <p>Todo el proceso en este gif.</p>

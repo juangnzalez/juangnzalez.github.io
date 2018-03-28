@@ -101,7 +101,7 @@ Muestra el título, URL y resumen de cada resultado, que se puede abrir directam
 
 <p>Mi shell es <em>zsh</em> y utilizo <em>antigen</em> para gestionar los módulos con lo que copiaré el <a href="https://github.com/jarun/googler/blob/master/auto-completion/zsh/_googler">_googler</a> que proporciona el autor en mi <code>~/.antigen/bundles/zsh-users/zsh-completions/src</code> y reinicio el <code>.zcompdump</code></p>
 
-<pre><code>rm -f ~/.zcompdump; compinit
+<pre><code class="language-bash">rm -f ~/.zcompdump; compinit
 </code></pre>
 
 <h3 id="integración-con-un-navegador">Integración con un navegador</h3>
@@ -138,14 +138,14 @@ Muestra el título, URL y resumen de cada resultado, que se puede abrir directam
 <li>Obtener 3 resultados, actualizados en los últimos 5 meses, en castellano y utilizando <a href="https://www.google.es/">Google.es</a>:</li>
 </ul>
 
-<pre><code>googler -n 3 -t m5 -c es -l es prueba
+<pre><code class="language-bash">googler -n 3 -t m5 -c es -l es prueba
 </code></pre>
 
 <ul>
 <li>Buscar ficheros en formato <em>pdf</em>:</li>
 </ul>
 
-<pre><code>googler filetype:pdf prueba
+<pre><code class="language-bash">googler filetype:pdf prueba
 </code></pre>
 
 <p>Podemos lanzarlo sin parámetros y usarlo de forma interactiva usando un <em>prompt</em> que el autor denomina <strong>omniprompt</strong>. Opciones disponibles pulsando <code>?</code></p>

@@ -87,7 +87,7 @@ frases desde la línea de comandos.</p>
 
 <p>Instalamos la aplicación desde el gestor de paquetes de <strong>Node</strong> <a href="https://www.npmjs.com/get-npm?utm_source=house&amp;utm_medium=homepage&amp;utm_campaign=free%20orgs&amp;utm_term=Install%20npm">npm</a></p>
 
-<pre><code>npm install -g trino
+<pre><code class="language-bash">npm install -g trino
 </code></pre>
 
 <h3 id="uso">Uso</h3>
@@ -132,7 +132,7 @@ Translator</strong>, <strong>Yandex</strong>, <strong>DeepL Translator</strong> 
 
 <p>Podemos clonar el repositorio en <a href="https://github.com/soimort/translate-shell"><strong>GitHub</strong></a>, utilizar algún gestor de paquetes o la opción más rápida, bajarnos el ejecutable en un directorio de nuestro <code>PATH</code> desde <em>git.io/trans</em>. En mi sistema sería algo como:</p>
 
-<pre><code>printenv | grep PATH
+<pre><code class="language-bash">printenv | grep PATH
 cd /usr/local/bin
 wget git.io/trans
 chmod +x trans
@@ -151,7 +151,7 @@ un <em>text-to-speech</em> con el resultado de la traducción que solicitemos.</
 
 <p>Este sería el uso básico de la aplicación.</p>
 
-<pre><code>trans test
+<pre><code class="language-bash">trans test
 </code></pre>
 
 <p>traduce la palabra <em>test</em> al idioma definido en nuestra variable de
@@ -163,7 +163,7 @@ entorno <code>LANG</code>.</p>
 <p>Podemos solicitar la traducción a más de un idioma concatenando sus
 códigos con un <em>+</em></p>
 
-<pre><code>trans :fr+en prueba
+<pre><code class="language-bash">trans :fr+en prueba
 </code></pre>
 
 <p>Para traducir una palabra especificando el idioma origen lo hacemos con un
@@ -171,7 +171,7 @@ códigos con un <em>+</em></p>
 
 <p>Podemos especificar idioma origen y destino para una traducción con</p>
 
-<pre><code>trans es:en prueba
+<pre><code class="language-bash">trans es:en prueba
 </code></pre>
 
 <ul>
@@ -180,7 +180,7 @@ códigos con un <em>+</em></p>
 
 <p>Para traducir una frase la pasamos a la aplicación entrecomillada</p>
 
-<pre><code>trans :en &quot;Una prueba de traducción&quot;
+<pre><code class="language-bash">trans :en &quot;Una prueba de traducción&quot;
 </code></pre>
 
 <ul>
@@ -190,7 +190,7 @@ códigos con un <em>+</em></p>
 <p>El resultado de la traducción suele ser bastante extenso. Normalmente nos
 servirá con el modo resumen.</p>
 
-<pre><code>trans -b :es hola
+<pre><code class="language-bash">trans -b :es hola
 </code></pre>
 
 <ul>
@@ -200,7 +200,7 @@ servirá con el modo resumen.</p>
 <p><strong>Google Translate</strong> se puede usar como un diccionario si solicitamos la
 traducción de una palabra al mismo idioma de esta, es decir</p>
 
-<pre><code>trans prueba
+<pre><code class="language-bash">trans prueba
 trans :es prueba
 </code></pre>
 
@@ -208,7 +208,7 @@ trans :es prueba
 
 <p>También podemos forzar este comportamiento añadiendo la opción <em>d</em></p>
 
-<pre><code>trans -d :es hola
+<pre><code class="language-bash">trans -d :es hola
 </code></pre>
 
 <ul>
@@ -217,12 +217,12 @@ trans :es prueba
 
 <p>Podemos solicitar un <em>text-to-speech</em> pasando la opción <em>-play</em></p>
 
-<pre><code>trans -play &quot;Una prueba&quot;
+<pre><code class="language-bash">trans -play &quot;Una prueba&quot;
 </code></pre>
 
 <p>y con <em>-speak</em> oiremos la palabra u oración que le pasemos</p>
 
-<pre><code>trans -speak &quot;Hello, how are you?&quot;
+<pre><code class="language-bash">trans -speak &quot;Hello, how are you?&quot;
 </code></pre>
 
 <ul>
@@ -231,7 +231,7 @@ trans :es prueba
 
 <p>También podemos traducir ficheros de texto y páginas web</p>
 
-<pre><code>trans file://test.txt
+<pre><code class="language-bash">trans file://test.txt
 
 trans https://www.w3.org/
 </code></pre>
@@ -245,7 +245,7 @@ vayamos pasando.</p>
 
 <p>Fijamos cuál será el idioma de entrada y cuál será el de salida</p>
 
-<pre><code>trans -shell es:en
+<pre><code class="language-bash">trans -shell es:en
 </code></pre>
 
 <h2 id="resumen">Resumen</h2>

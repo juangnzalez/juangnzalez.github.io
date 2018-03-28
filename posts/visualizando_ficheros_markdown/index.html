@@ -76,7 +76,7 @@
 
 <p>En una línea sería algo como:</p>
 
-<pre><code class="language-shell">pandoc -t html ejemplo.md | lynx -stdin
+<pre><code class="language-bash">pandoc -t html ejemplo.md | lynx -stdin
 
 pandoc -t html ejemplo.md | w3m -T text/html
 </code></pre>
@@ -98,12 +98,12 @@ pandoc -t html ejemplo.md | w3m -T text/html
 
 <p>Tenemos a nuestra disposición multitud de temas registrados en el <code>ansi_tables.json</code> localizado en:</p>
 
-<pre><code class="language-shell">pip show mdv | grep Location 
+<pre><code class="language-bash">pip show mdv | grep Location 
 </code></pre>
 
 <p>En este fichero podemos añadir o editar un tema existente. Este es el que utilizo yo:</p>
 
-<pre><code>   &quot;000.1331&quot;: {
+<pre><code class="language-bash">   &quot;000.1331&quot;: {
         &quot;name&quot;: &quot;juangonzalez&quot;, 
         &quot;ct&quot;: [
             &quot;191&quot;, 
@@ -117,7 +117,7 @@ pandoc -t html ejemplo.md | w3m -T text/html
 
 <p>Podemos ajustar los colores que se utilizarán para cada elemento del documento editando el <code>markdownviewer.py</code> tal y como se describe en la ayuda de la aplicación. Mi configuración actual es:</p>
 
-<pre><code># ansi cols (default):
+<pre><code class="language-bash"># ansi cols (default):
 # R: Red (warnings), L: low visi, BG: background, BGL: background light, C=code
 # H1 - H5 = the theme, the numbers are the ansi color codes:
 H1, H2, H3, H4, H5, R, L, BG, BGL, T, TL, C = \
@@ -129,12 +129,12 @@ CH1, CH2, CH3, CH4, CH5 = H1, H2, H3, H4, H5
 
 <p>La instalación se hará con un:</p>
 
-<pre><code>pip install mdv
+<pre><code class="language-bash">pip install mdv
 </code></pre>
 
 <p>Arrancamos con:</p>
 
-<pre><code>mdv ejemplo.md
+<pre><code class="language-bash">mdv ejemplo.md
 </code></pre>
 
 <p>Si lanzamos la aplicación con un <code>mdv -h</code> obtendremos un listado de las opciones disponibles. Si lo lanzamos sin parámetros, se mostrará cómo se interpreta un pequeño ejemplo.</p>
