@@ -68,8 +68,6 @@
     <section class="post-content">
         
 
-<h1 id="googler-googleando-desde-la-línea-de-comandos">Googler: Googleando desde la línea de comandos</h1>
-
 <p>Del sitio web de <a href="https://github.com/jarun/googler">jarun/googler: Google Search, Google Site Search, Google News from the terminal</a></p>
 
 <blockquote>
@@ -101,7 +99,7 @@ Muestra el título, URL y resumen de cada resultado, que se puede abrir directam
 
 <h3 id="integración-con-nuestra-shell">Integración con nuestra shell</h3>
 
-<p>Mi shell es <em>zsh</em> y utilizo <em>antigen</em> para gestionar los módulos con lo que copiaré el <a href="https://github.com/jarun/googler/blob/master/auto-completion/zsh/_googler">_googler</a> que proporciona el autor en mi <code>~/.antigen/bundles/zsh-users/zsh-completions/src</code> y renicio el <code>.zcompdump</code></p>
+<p>Mi shell es <em>zsh</em> y utilizo <em>antigen</em> para gestionar los módulos con lo que copiaré el <a href="https://github.com/jarun/googler/blob/master/auto-completion/zsh/_googler">_googler</a> que proporciona el autor en mi <code>~/.antigen/bundles/zsh-users/zsh-completions/src</code> y reinicio el <code>.zcompdump</code></p>
 
 <pre><code>rm -f ~/.zcompdump; compinit
 </code></pre>
@@ -114,7 +112,7 @@ Muestra el título, URL y resumen de cada resultado, que se puede abrir directam
 
 <h3 id="apariencia">Apariencia</h3>
 
-<p>Podemos personalizar los colores con los que se mostrarán los resultados asignando una <strong>cadena de 6 caracteres</strong> a la variable de entorno <code>GOOGLER_COLORS</code> o pasándola como párametro (<code>--colors</code>) al lanzar la aplicación.</p>
+<p>Podemos personalizar los colores con los que se mostrarán los resultados asignando una <strong>cadena de 6 caracteres</strong> a la variable de entorno <code>GOOGLER_COLORS</code> o pasándola como parámetro (<code>--colors</code>) al lanzar la aplicación.</p>
 
 <p>Mi configuración es:</p>
 
@@ -137,7 +135,7 @@ Muestra el título, URL y resumen de cada resultado, que se puede abrir directam
 <p>Alguna de las opciones que suelo utilizar son:</p>
 
 <ul>
-<li>Obtener 3 resultados, actualizados en los últmos 5 meses, en castellano y utilizando <a href="https://www.google.es/">Google.es</a>:</li>
+<li>Obtener 3 resultados, actualizados en los últimos 5 meses, en castellano y utilizando <a href="https://www.google.es/">Google.es</a>:</li>
 </ul>
 
 <pre><code>googler -n 3 -t m5 -c es -l es prueba

@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>Usando Google Translate desde la línea de comandos</title>
+      <title>Usando Google Translate desde la Línea de comandos</title>
       <link>http://juangonzalez.com.es/posts/googletranslatecli/</link>
       <pubDate>Sat, 24 Mar 2018 11:54:58 +0100</pubDate>
       
@@ -51,7 +51,7 @@ Observaréis que los resúmenes que nos devuelven las aplicaciones son las líne
       <pubDate>Wed, 11 Oct 2017 18:42:08 +0200</pubDate>
       
       <guid>http://juangonzalez.com.es/posts/googleando_desde_cli/</guid>
-      <description>Googler: Googleando desde la línea de comandos Del sitio web de jarun/googler: Google Search, Google Site Search, Google News from the terminal
+      <description>Del sitio web de jarun/googler: Google Search, Google Site Search, Google News from the terminal
  Googler es una herramienta para consultar en Google (Web y News) desde la línea de comandos. Muestra el título, URL y resumen de cada resultado, que se puede abrir directamente en un navegador.
  Principales características  Se puede integrar con un navegador basado en texto. Podemos definir el número de resultados a mostrar y desde qué posición se empezarán a mostrar.</description>
     </item>
@@ -62,7 +62,7 @@ Observaréis que los resúmenes que nos devuelven las aplicaciones son las líne
       <pubDate>Wed, 04 Oct 2017 18:55:17 +0200</pubDate>
       
       <guid>http://juangonzalez.com.es/posts/visualizando_ficheros_markdown/</guid>
-      <description>Visualizando ficheros Markdown El lenguaje de marcado Markdown está diseñado para tener buena legibilidad del fichero origen, pero con poco trabajo podemos interpretar el fichero y mostrar en consola el resultado mejorando aún más la legibilidad del documento.
+      <description>El lenguaje de marcado Markdown está diseñado para tener buena legibilidad del fichero origen, pero con poco trabajo podemos interpretar el fichero y mostrar en consola el resultado mejorando aún más la legibilidad del documento.
 Opciones Una puede ser interpretar el fichero de texto con formato markdown con el conversor de ficheros Pandoc y pasar la salida a un navegador tipo Lynx o w3m.
 En una línea sería algo como:</description>
     </item>
@@ -73,9 +73,9 @@ En una línea sería algo como:</description>
       <pubDate>Wed, 27 Sep 2017 17:33:07 +0200</pubDate>
       
       <guid>http://juangonzalez.com.es/posts/notasconterminalvelocity/</guid>
-      <description>Terminal Velocity. Manejando notas El sistema que uso para tomar y consultar notas se basa en ficheros de texto con formato Markdown alojados en un directorio Dropbox.
+      <description>El sistema que uso para tomar y consultar notas se basa en ficheros de texto con formato Markdown alojados en un directorio Dropbox.
 Desde hace años utilizo Notational Velocity o alguno de sus derivados.
-Existen bastantes aplicaciones que imitan la funcionalidad de NV; he provado muchas y mi preferida es nvALT.
+Existen bastantes aplicaciones que imitan la funcionalidad de NV; he probado muchas y mi preferida es nvALT.
 La inmensa mayoría de estas aplicaciones basadas en NV son para entornos gráficos. Ando a la caza de una aplicación que funcione en la línea de comandos con funcionalidades parecidas a Notational Velocity y de momento la que más me gusta y la que últimamente más utilizo es Terminal Velocity.</description>
     </item>
     
@@ -85,8 +85,8 @@ La inmensa mayoría de estas aplicaciones basadas en NV son para entornos gráfi
       <pubDate>Thu, 21 Sep 2017 17:45:08 +0200</pubDate>
       
       <guid>http://juangonzalez.com.es/posts/entorno_oracle_plsql/</guid>
-      <description>Montando un entorno para Oracle SQL - PL/SQL Motivación Estaba recordando, de tiempos de estudiante, las maniobras que tenía que hacer para conseguir un entorno con el que poder estudiar la asignatura de Oracle SQL y PL/SQL. A saber:
- Hacer pasar la Debian de turno por una Red Hat. Variables de entorno, ampliar swap, arrancar aquel horrible instalador. 1 Rezar dos Padre nuestro para que todo terminara sin incidentes.</description>
+      <description>Motivación Estaba recordando, de tiempos de estudiante, las maniobras que tenía que hacer para conseguir un entorno con el que poder estudiar la asignatura de Oracle SQL y PL/SQL. A saber:
+ Hacer pasar la Debian de turno por una Red Hat. Variables de entorno, ampliar swap, arrancar aquel horrible instalador. 1 Rezar dos Padre nuestro para que todo terminara sin incidentes. Rezar dos Avemarías para que levantara el listener.</description>
     </item>
     
     <item>
@@ -95,9 +95,9 @@ La inmensa mayoría de estas aplicaciones basadas en NV son para entornos gráfi
       <pubDate>Mon, 18 Sep 2017 16:24:45 +0200</pubDate>
       
       <guid>http://juangonzalez.com.es/posts/less_f/</guid>
-      <description>Usando less +F como sustituto de tail -f  Cuando necesitamos controlar un fichero de log casi siempre usamos tail -f. En mi caso ese tail a menudo va acompañado de un grep, abrir el fichero con un editor &amp;hellip;
+      <description>Cuando necesitamos controlar un fichero de log casi siempre usamos tail -f. En mi caso ese tail a menudo va acompañado de un grep, abrir el fichero con un editor &amp;hellip;
 En este post veremos si es posible sustituir estos procesos con less.
- Después de leer Stop using tail -f (mostly) cada vez uso más la opción de less +F.</description>
+ Después de leer Stop using tail -f (mostly) cada vez uso más la opción de less +F. En el se comentan las ventajas que presenta esta opción frente a tail -f cuando estamos revisando un archivo que está cambiando a lo largo del tiempo.</description>
     </item>
     
     <item>
@@ -106,7 +106,7 @@ En este post veremos si es posible sustituir estos procesos con less.
       <pubDate>Thu, 14 Sep 2017 18:52:44 +0200</pubDate>
       
       <guid>http://juangonzalez.com.es/posts/presentacion/</guid>
-      <description>Motivación  “Existe todo un empeño por parte de los fabricantes de software en ocultar cómo funcionan realmente los ordenadores. Las metáforas visuales, las interfaces gráficas simplifican el uso de los PC, pero el precio de que se viva la tecnología como algo mistificado, mágico, sin conexión alguna entre causas y efectos. Por el contrario una corriente que se remonta a los orígenes de la informática personal y a las primeras comunidades de hackers nunca ha dejado de usar la interfaz de la línea de comandos.</description>
+      <description>“Existe todo un empeño por parte de los fabricantes de software en ocultar cómo funcionan realmente los ordenadores. Las metáforas visuales, las interfaces gráficas simplifican el uso de los PC, pero el precio de que se viva la tecnología como algo mistificado, mágico, sin conexión alguna entre causas y efectos. Por el contrario una corriente que se remonta a los orígenes de la informática personal y a las primeras comunidades de hackers nunca ha dejado de usar la interfaz de la línea de comandos.</description>
     </item>
     
   </channel>
