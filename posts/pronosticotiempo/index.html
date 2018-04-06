@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es-es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Consultando el pronóstico del tiempo desde CLI &middot; Línea de Comandos</title>
+    <meta name="author" content="Juan González">
+    <meta name="description" content="Blog sobre el uso y disfrute de la línea de comandos">
+    <meta name="generator" content="Hugo 0.37" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <!-- RSS autodiscovery -->
+    
+
+    <link rel="shortcut icon" href="http://juangonzalez.com.es/img/favicon.ico">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="http://juangonzalez.com.es/css/screen.css">
+    <link rel="stylesheet" href="http://juangonzalez.com.es/css/github.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+    
+
+    
+    <link rel="shortcut icon" type="image/x-icon" href="http://juangonzalez.com.es/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://juangonzalez.com.es/favicon.ico">
+    
+
+    <!-- Stylesheet for theme color -->
+    <style type="text/css">
+    a, a:visited {color: #ff9d00;}
+    .pagination a {color: #ff9d00;}
+    .gist .gist-file .gist-meta a:visited {color: #ff9d00 !important;}
+    a:focus, a:hover {color: #d88500;}
+    h1.post-title a:focus, h1.post-title a:hover, h1.blog-title a:focus, h1.blog-title a:hover {color: #d88500;}
+    .older-posts:hover, .newer-posts:hover {color: #d88500;}
+</style>
+</head>
+
+<body class="home-template">
+    <header id="site-head">
+	
+	<h1 class="blog-title"><a href="http://juangonzalez.com.es">Línea de Comandos</a></h1>
+	
+
+	
+	<h1 class="blog-subtitle">Un blog sobre el uso y disfrute de la línea de comandos</h1>
+	
+</header>
+
+    
+    
+    <main class="content" role="main">
+    
+<article class="post">
+    <header>
+        <h1 class="post-title">Consultando el pronóstico del tiempo desde CLI</h1>
+        <div class="post-meta">
+          <time class="post-date" datetime="2018-04-05T19:16:23&#43;02:00">
+  5 abril 2018 
+</time>
+        </div>
+    </header>
+
+    <section class="post-content">
+        
+
+<blockquote>
+<p>En este <em>post</em> comentaré las características principales de la aplicación
+que utilizo para consultar la previsión del tiempo atmosférico desde la
+<strong>línea de comandos</strong>.</p>
+</blockquote>
+
+<p>Tenemos muchas opciones para esta tarea pero mi preferida es <a href="https://github.com/schachmat/wego">GitHub - schachmat/wego: weather app for the terminal</a></p>
+
+<h2 id="características">Características.</h2>
+
+<ul>
+<li>Podemos consultar la previsión del tiempo para hasta 7 días (dependerá del
+proveedor y las características de la cuenta que utilicemos).</li>
+<li>Iconos en modo texto (<em>ASCII art</em>).</li>
+<li>Muestra temperatura real y sensación térmica (por supuesto si el proveedor
+proporciona el dato).</li>
+<li>Muestra la probabilidad de lluvia.</li>
+<li>Soporte (parcial) del castellano.</li>
+</ul>
+
+<h2 id="dependencias">Dependencias.</h2>
+
+<p>Antes de instalar la aplicación debemos tener resueltas las dependencias.</p>
+
+<ul>
+<li><a href="https://golang.org/">The Go Programming Language</a> instalado en nuestro
+entorno.</li>
+<li>Lanzaremos la aplicación desde un emulador de terminal con soporte *<em>utf-8</em>,
+<strong>256 colores</strong>.</li>
+
+<li><p>Acceso a al <strong>API</strong> con la <em>API key</em> correspondiente del proveedor que
+elijamos entre los tres posibles:</p>
+
+<ol>
+<li><a href="https://darksky.net/dev">Dark Sky</a></li>
+<li><a href="https://developer.worldweatheronline.com/api/">Weather API | Local Weather API | World Weather
+Online</a> que parece ser ya
+no proporciona acceso gratuito a su API.</li>
+<li><a href="https://openweathermap.org/api">Weather API - OpenWeatherMap</a> <strong>mi
+elección</strong>.</li>
+</ol></li>
+</ul>
+
+<h3 id="openweathermap-https-openweathermap-org"><a href="https://openweathermap.org/">OpenWeatherMap</a></h3>
+
+<p>Creamos una cuenta en <a href="https://home.openweathermap.org/">Members</a> y accedemos a
+la clave de acceso a la <strong>API</strong> en
+<a href="https://home.openweathermap.org/api_keys">Members</a>.</p>
+
+<p>Al registrarnos obtendremos acceso gratuito a la predicción del tiempo para 5
+días.</p>
+
+<h2 id="instalación">Instalación.</h2>
+
+<p>Una vez resueltas las dependencias podemos instalar la aplicación con un:</p>
+
+<pre><code class="language-bash">go get -u github.com/schachmat/wego
+</code></pre>
+
+<p>Hemos de comprobar que tenemos la variable de entorno <code>GOPATH</code> correctamente
+definida.</p>
+
+<h2 id="configuración-y-uso">Configuración y uso.</h2>
+
+<p>Al ejecutar por primera vez la aplicación se creará en nuestro <code>home</code> un
+fichero <code>.wegorc</code> en el cual definiremos el proveedor que vamos a utilizar,
+número de días para los que queremos obtener la previsión del tiempo, idioma en
+el que se mostrarán los datos, localización para la que solicitamos la
+previsión y la clave de acceso a la <em>API</em> del proveedor elegido.</p>
+
+<p>Con todos los parámetros definidos ejecutamos de nuevo la aplicación con un
+<code>wego</code> y se nos mostrará en la terminal los datos del tiempo en la ubicación
+definida en el fichero de configuración para el día
+actual además de la previsión para los próximos días.</p>
+
+<p>Obtendremos para cada día las condiciones meteorológicas que se prevén en
+cuatro momentos del día: mañana, mediodía, tarde y noche.</p>
+
+<h2 id="resumen">Resumen.</h2>
+
+<p>Para terminar un pequeño gif resumen de lo comentado.</p>
+
+<p><a href="https://asciinema.org/a/AyobM5uk7yr6H66bI6vEd70TB"><img src="https://asciinema.org/a/AyobM5uk7yr6H66bI6vEd70TB.png" alt="asciicast" /></a></p>
+
+    </section>
+
+    
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+	<div class="inner">
+		<section class="footer-social">
+      
+      <a href="//twitter.com/juangnzalez" target="_blank" title="Twitter"><i class="fa fa-2x fa-fw fa-twitter"></i> <span class="hidden">Twitter</span></a>&nbsp;
+      
+      
+      
+      
+      
+      
+      <a href="//github.com/juangnzalez" target="_blank" title="GitHub"><i class="fa fa-2x fa-fw fa-github"></i> <span class="hidden">GitHub</span></a>&nbsp;
+      
+      
+      
+  </section>
+
+
+		<section class="copyright">&copy; 2018 <a href="http://juangonzalez.com.es">Juan González</a>. Released under the MIT license.</section>
+	</div>
+</footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="http://juangonzalez.com.es/js/index.js"></script>
+<script src="http://juangonzalez.com.es/js/smooth-scroll.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+
+
+<script>
+    smoothScroll.init({
+        speed: 800,
+        easing: 'easeInOutCubic',
+        updateURL: false,
+        offset: 125,
+    });
+</script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+</body>
+</html>

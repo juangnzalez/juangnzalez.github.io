@@ -6,10 +6,21 @@
     <description>Recent content on Línea de Comandos</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
-    <lastBuildDate>Sat, 24 Mar 2018 11:54:58 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 05 Apr 2018 19:16:23 +0200</lastBuildDate>
     
 	<atom:link href="http://juangonzalez.com.es/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Consultando el pronóstico del tiempo desde CLI</title>
+      <link>http://juangonzalez.com.es/posts/pronosticotiempo/</link>
+      <pubDate>Thu, 05 Apr 2018 19:16:23 +0200</pubDate>
+      
+      <guid>http://juangonzalez.com.es/posts/pronosticotiempo/</guid>
+      <description>En este post comentaré las características principales de la aplicación que utilizo para consultar la previsión del tiempo atmosférico desde la línea de comandos.
+ Tenemos muchas opciones para esta tarea pero mi preferida es GitHub - schachmat/wego: weather app for the terminal
+Características.  Podemos consultar la previsión del tiempo para hasta 7 días (dependerá del proveedor y las características de la cuenta que utilicemos). Iconos en modo texto (ASCII art).</description>
+    </item>
     
     <item>
       <title>Usando Google Translate desde la Línea de comandos</title>

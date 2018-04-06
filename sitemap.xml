@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://juangonzalez.com.es/posts/pronosticotiempo/</loc>
+    <lastmod>2018-04-05T19:16:23+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://juangonzalez.com.es/posts/googletranslatecli/</loc>
     <lastmod>2018-03-24T11:54:58+01:00</lastmod>
   </url>
@@ -54,13 +59,13 @@
   
   <url>
     <loc>http://juangonzalez.com.es/</loc>
-    <lastmod>2018-03-24T11:54:58+01:00</lastmod>
+    <lastmod>2018-04-05T19:16:23+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://juangonzalez.com.es/posts/</loc>
-    <lastmod>2018-03-24T11:54:58+01:00</lastmod>
+    <lastmod>2018-04-05T19:16:23+02:00</lastmod>
     <priority>0</priority>
   </url>
   
