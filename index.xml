@@ -6,10 +6,22 @@
     <description>Recent content on Línea de Comandos</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
-    <lastBuildDate>Thu, 05 Apr 2018 19:16:23 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 11 Apr 2018 18:46:02 +0200</lastBuildDate>
     
 	<atom:link href="http://juangonzalez.com.es/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cuenta atrás desde la Línea de Comandos</title>
+      <link>http://juangonzalez.com.es/posts/cuentaatras/</link>
+      <pubDate>Wed, 11 Apr 2018 18:46:02 +0200</pubDate>
+      
+      <guid>http://juangonzalez.com.es/posts/cuentaatras/</guid>
+      <description>En este post está dedicado a la aplicación que uso como temporizador.
+ GitHub - trehn/termdown: Countdown timer and stopwatch in your terminal funciona como cronómetro o como temporizador. Esta última aplicación es la que uso con más frecuencia.
+Para mí la característica más importante es que podemos tener hasta 3 métodos con los que se nos informará del fin de la cuenta atrás que hayamos definido.
+Instalación. Termdown es una aplicación escrita en Python.</description>
+    </item>
     
     <item>
       <title>Consultando el pronóstico del tiempo desde CLI</title>

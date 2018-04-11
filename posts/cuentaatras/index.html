@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es-es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Cuenta atrás desde la Línea de Comandos &middot; Línea de Comandos</title>
+    <meta name="author" content="Juan González">
+    <meta name="description" content="Blog sobre el uso y disfrute de la línea de comandos">
+    <meta name="generator" content="Hugo 0.37" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <!-- RSS autodiscovery -->
+    
+
+    <link rel="shortcut icon" href="http://juangonzalez.com.es/img/favicon.ico">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="http://juangonzalez.com.es/css/screen.css">
+    <link rel="stylesheet" href="http://juangonzalez.com.es/css/github.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+    
+
+    
+    <link rel="shortcut icon" type="image/x-icon" href="http://juangonzalez.com.es/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://juangonzalez.com.es/favicon.ico">
+    
+
+    <!-- Stylesheet for theme color -->
+    <style type="text/css">
+    a, a:visited {color: #ff9d00;}
+    .pagination a {color: #ff9d00;}
+    .gist .gist-file .gist-meta a:visited {color: #ff9d00 !important;}
+    a:focus, a:hover {color: #d88500;}
+    h1.post-title a:focus, h1.post-title a:hover, h1.blog-title a:focus, h1.blog-title a:hover {color: #d88500;}
+    .older-posts:hover, .newer-posts:hover {color: #d88500;}
+</style>
+</head>
+
+<body class="home-template">
+    <header id="site-head">
+	
+	<h1 class="blog-title"><a href="http://juangonzalez.com.es">Línea de Comandos</a></h1>
+	
+
+	
+	<h1 class="blog-subtitle">Un blog sobre el uso y disfrute de la línea de comandos</h1>
+	
+</header>
+
+    
+    
+    <main class="content" role="main">
+    
+<article class="post">
+    <header>
+        <h1 class="post-title">Cuenta atrás desde la Línea de Comandos</h1>
+        <div class="post-meta">
+          <time class="post-date" datetime="2018-04-11T18:46:02&#43;02:00">
+  11 abril 2018 
+</time>
+        </div>
+    </header>
+
+    <section class="post-content">
+        
+
+<blockquote>
+<p>En este post está dedicado a la aplicación que uso como <em>temporizador</em>.</p>
+</blockquote>
+
+<p><a href="https://github.com/trehn/termdown">GitHub - trehn/termdown: Countdown timer and stopwatch in your
+terminal</a> funciona
+como cronómetro o como temporizador. Esta última aplicación es la que uso con más
+frecuencia.</p>
+
+<p>Para mí la característica más importante es que podemos tener hasta 3 métodos
+con los que se nos informará del fin de la cuenta atrás que hayamos definido.</p>
+
+<h2 id="instalación">Instalación.</h2>
+
+<p><a href="https://github.com/trehn/termdown">Termdown</a> es una aplicación escrita en
+<a href="https://www.python.org/">Python</a>. Podemos instalarla con el
+gestor de paquetes de este lenguaje <a href="https://es.wikipedia.org/wiki/Pip_(administrador_de_paquetes)">Pip</a>.</p>
+
+<p>Con un simple <code>pip install termdown</code> tendremos la aplicación instalada en
+nuestro sistema.</p>
+
+<h2 id="uso">Uso</h2>
+
+<p>Obtendremos las opciones o parámetros que podemos pasarle a la aplicación con
+un <code>termdown --help</code>.</p>
+
+<p>Como comentaba al principio la opción de usar la aplicación como temporizador o
+cuenta atrás es la que uso.</p>
+
+<p>Para mí los parámetros más interesantes son:</p>
+
+<ul>
+<li><code>-b, --blink</code> cuando termina la <em>cuenta atrás</em> se genera un <em>parpadeo</em> en la
+terminal (ver <a href="https://asciinema.org/a/1kd5SF7pK0etd36FmBDVIpJ6g">gif</a>
+final).</li>
+<li><code>-c, --clitical N</code> Cuando el contador llega a los <code>N</code> segundos finales el
+contador pasa a color rojo.</li>
+<li><code>-q, --quit-after N</code> después de <code>N</code>segundos se finaliza el <em>blink</em> definido
+con la opción <code>-b</code>.</li>
+<li><code>-T, --title TEXTO</code> texto a mostrar en la parte superior de nuestro
+temporizador.</li>
+<li><code>-v, --voice VOICE</code> oiremos la cuenta atrás final con la voz que definamos en
+<code>VOICE</code>. Para saber qué <em>voces</em> tenemos disponibles en <em>macOS</em> ejecutamos <code>say -v '?'</code>. En castellano (<em>es_ES</em>) disponemos de las voces de <em>Jorge</em> y <em>Mónica</em>.</li>
+</ul>
+
+<h3 id="teclas">Teclas</h3>
+
+<p>Durante la ejecución podemos utilizar las siguientes teclas para controlar la
+aplicación.</p>
+
+<ul>
+<li><code>l</code> marcamos el fín de una <em>vuelta</em> cuando estamos en modo <em>cronómetro</em></li>
+<li><code>r</code> hacemos un <em>reset</em></li>
+<li><code>espacio</code> hacemos una <em>pausa</em></li>
+<li><code>q</code> salimos de la aplicación</li>
+</ul>
+
+<h2 id="resumen">Resumen</h2>
+
+<p>Cuando termine la cuenta atrás podemos conseguir tres avisos:</p>
+
+<ul>
+<li>Con el parámetro <code>b</code> se mostrará un parpadeo rojo en la terminal desde la que
+lanzamos la aplicación.</li>
+<li>Con el <code>-v [Jorge, Monica]</code> oiremos la cuenta atrás final. Por ejemplo si
+lanzamos un temporizador de un minuto con un <code>-c 3</code> se nos informará de que
+hemos llegado a los 30 últimos segundos, a los 10 últimos, a los 5 y
+finalmente oiremos el 3, 2, 1 final.</li>
+<li>A no ser que especifiquemos lo contrario pasando el parámetro <code>-B</code> la
+conclusión de la cuenta atrás siempre genera un <code>BELT</code> en nuestra consola con
+lo que lo más seguro es que también obtengamos un avisó por el sistema de
+notificaciones de nuestro sistema.</li>
+</ul>
+
+<p>Así es seguro que nos enteraremos del final de la cuenta atrás.</p>
+
+<p>Y como siempre un pequeño gif demostración.</p>
+
+<p><a href="https://asciinema.org/a/1kd5SF7pK0etd36FmBDVIpJ6g"><img src="https://asciinema.org/a/1kd5SF7pK0etd36FmBDVIpJ6g.png" alt="asciicast" /></a></p>
+
+    </section>
+
+    
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+	<div class="inner">
+		<section class="footer-social">
+      
+      <a href="//twitter.com/juangnzalez" target="_blank" title="Twitter"><i class="fa fa-2x fa-fw fa-twitter"></i> <span class="hidden">Twitter</span></a>&nbsp;
+      
+      
+      
+      
+      
+      
+      <a href="//github.com/juangnzalez" target="_blank" title="GitHub"><i class="fa fa-2x fa-fw fa-github"></i> <span class="hidden">GitHub</span></a>&nbsp;
+      
+      
+      
+  </section>
+
+
+		<section class="copyright">&copy; 2018 <a href="http://juangonzalez.com.es">Juan González</a>. Released under the MIT license.</section>
+	</div>
+</footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="http://juangonzalez.com.es/js/index.js"></script>
+<script src="http://juangonzalez.com.es/js/smooth-scroll.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+
+
+<script>
+    smoothScroll.init({
+        speed: 800,
+        easing: 'easeInOutCubic',
+        updateURL: false,
+        offset: 125,
+    });
+</script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+</body>
+</html>
